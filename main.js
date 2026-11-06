@@ -1,16 +1,13 @@
-let goalInput = document.getElementById("goalInput");
-let goalList = document.getElementById("goalList");
-let addGoalButton = document.getElementById("addGoalButton");
+let textInput = document.getElementById("textInput");
+let result = document.getElementById("result");
 
-addGoalButton.addEventListener("click", function () {
-    let goal = goalInput.value;
-    
-    if (goal.trim() === "") {
-        alert("Введите цель");
-    } else {
-        let newGoal = document.createElement("li");
-        newGoal.textContent = goal;
-        goalList.append(newGoal);
-        goalInput.value = "";
-    }
+textInput.addEventListener("input", function () {
+    result.textContent = "Символов: " + textInput.value.length;
+});
+
+let nameInput = document.getElementById("nameInput");
+let nameResult = document.getElementById("nameResult");
+
+nameInput.addEventListener("change", function () {
+    nameResult.textContent = "Ваше имя: " + nameInput.value;
 });
