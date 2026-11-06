@@ -1,16 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8" />
-    <title>SMOL</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="main.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Магазин</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <input id="textInput" type="text" placeholder="Введите текст" />
-    <p id="result">Символов: 0</p>
-    
-    <input id="nameInput" type="text" placeholder="Введите имя" />
-    <p id="nameResult"></p>
+  <h1>Магазин</h1>
+  <div class="product">
+    <h2>Хлеб</h2>
+    <button id="minus1">-</button>
+    <span id="count1">0</span>
+    <button id="plus1">+</button>
+  </div>
+  <div class="product">
+    <h2>Молоко</h2>
+    <button id="minus2">-</button>
+    <span id="count2">0</span>
+    <button id="plus2">+</button>
+  </div>
+  <div class="product">
+    <h2>Яблоки</h2>
+    <button id="minus3">-</button>
+    <span id="count3">0</span>
+    <button id="plus3">+</button>
+  </div>
+  <button id="order">Посмотреть заказ</button>
+  <p id="result"></p>
 </body>
 </html>
